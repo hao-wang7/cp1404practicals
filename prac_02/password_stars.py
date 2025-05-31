@@ -1,20 +1,17 @@
-def get_password(min_length):
-    """Function to get a password with minimum length."""
-    while True:
-        password = input(f"Enter a password (minimum {min_length} characters): ")
-        if len(password) >= min_length:
-            return password
-        print(f"Error: Password must be at least {min_length} characters long.")
-
-def print_asterisks(password):
-    """Function to print asterisks equivalent to the password length."""
-    print('*' * len(password))
+MIN_LENGTH = 8
 
 def main():
-    """Main function to run the password validation process."""
-    min_length = 8
-    password = get_password(min_length)
+    password = get_password()
     print_asterisks(password)
 
-# Call the main function
+def get_password():
+    password = input("Enter password: ")
+    while len(password) < MIN_LENGTH:
+        print("Password too short")
+        password = input("Enter password: ")
+    return password
+
+def print_asterisks(password):
+    print("*" * len(password))
+
 main()
