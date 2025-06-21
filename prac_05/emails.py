@@ -17,3 +17,10 @@ def main():
     email_to_name = {}  # Dictionary to store emails as keys and names as values
 # Prompt the user for the first email
     email = input("Email: ").strip()
+
+# Loop as long as the email is not blank
+    while email != "":
+        # Extract a default name from the email
+        default_name = extract_name_from_email(email)
+        # Ask user to confirm the extracted name
+        confirm = input(f"Is your name {default_name}? (Y/n) ").strip().lower()
