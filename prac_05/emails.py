@@ -12,3 +12,8 @@ def extract_name_from_email(email):
     # Capitalize the first letter of each part and join them with spaces
     name = ' '.join(part.title() for part in parts)
     return name
+
+def main():
+    email_to_name = {}  # Dictionary to store emails as keys and names as values
+# Prompt the user for the first email
+    email = input("Email: ").strip()
