@@ -11,3 +11,8 @@ COLOR_TO_HEX = {
     "khaki": "#f0e68c",
     "lavender": "#e6e6fa"
 }
+
+# Prompt user for color name and convert input to lowercase for case-insensitive comparison
+color_name = input("Enter color name: ").lower()
+while color_name != "":
+    if color_name in COLOR_TO_HEX:
