@@ -21,10 +21,13 @@ for code, name in CODE_TO_NAME.items():
     print(f"{code:3} is {name}")
 
 
-state_code = input("Enter short state: ")
+# Convert user input to uppercase to allow lowercase entries
+state_code = input("Enter short state: ").upper()
 while state_code != "":
     if state_code in CODE_TO_NAME:
-        print(state_code, "is", CODE_TO_NAME[state_code])
+        print(f"{state_code} is {CODE_TO_NAME[state_code]}")
     else:
         print("Invalid short state")
+
+
     state_code = input("Enter short state: ")
