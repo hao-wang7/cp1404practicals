@@ -19,3 +19,6 @@ for word in words:
         word_counts[word] += 1  # Increment count if word already seen
     else:
         word_counts[word] = 1   # Initialize count if word is new
+
+# Find the length of the longest word for alignment
+max_length = max(len(word) for word in word_counts)
