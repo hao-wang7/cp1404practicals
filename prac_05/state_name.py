@@ -29,5 +29,5 @@ while state_code != "":
     else:
         print("Invalid short state")
 
-
-    state_code = input("Enter short state: ")
+    # Convert input again for the next loop iteration
+    state_code = input("Enter short state: ").upper()
