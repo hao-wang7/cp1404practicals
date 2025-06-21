@@ -36,3 +36,10 @@ def main():
             email_to_name[email] = name
             # Prompt for next email
             email = input("Email: ").strip()
+
+        # After input ends, print all stored emails and names
+    for email, name in email_to_name.items():
+        print(f"{name} ({email})")
+
+if __name__ == "__main__":
+    main()
