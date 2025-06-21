@@ -22,3 +22,7 @@ for word in words:
 
 # Find the length of the longest word for alignment
 max_length = max(len(word) for word in word_counts)
+
+# Print each word and its count, sorted alphabetically and aligned nicely
+for word in sorted(word_counts):
+    print(f"{word:{max_length}} : {word_counts[word]}")
