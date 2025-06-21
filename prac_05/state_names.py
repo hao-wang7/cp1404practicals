@@ -27,4 +27,5 @@ while state_code != "":
         print(f"{state_code} is {CODE_TO_NAME[state_code]}")
     else:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    # Convert input again for the next loop iteration
+    state_code = input("Enter short state: ").upper()
