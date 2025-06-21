@@ -21,3 +21,5 @@ while color_name != "":
     else:
         # Handle invalid color name input gracefully
         print("Invalid color name")
+    # Prompt for the next input
+    color_name = input("Enter color name: ").lower()
