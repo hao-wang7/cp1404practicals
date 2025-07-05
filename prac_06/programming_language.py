@@ -3,7 +3,7 @@ programming_language.py
 
 Estimated time: 30 minutes
 
-Actual time:  minutes
+Actual time: 15 minutes
 """
 
 class ProgrammingLanguage:
