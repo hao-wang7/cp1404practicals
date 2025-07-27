@@ -15,3 +15,6 @@ def main():
 
     # 4. Restart the fare meter
     my_taxi.start_fare()
+
+    # 5. Drive the taxi 100 km
+    my_taxi.drive(100)
