@@ -12,3 +12,6 @@ def main():
     # 3. Print the taxi details and current fare
     print(my_taxi)
     print("Current fare: ${:.2f}".format(my_taxi.get_fare()))
+
+    # 4. Restart the fare meter
+    my_taxi.start_fare()
