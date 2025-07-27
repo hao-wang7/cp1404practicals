@@ -8,3 +8,7 @@ def main():
 
     # 2. Drive the taxi 40 km
     my_taxi.drive(40)
+
+    # 3. Print the taxi details and current fare
+    print(my_taxi)
+    print("Current fare: ${:.2f}".format(my_taxi.get_fare()))
